@@ -13,9 +13,5 @@ class JulesApp(BasePage):
     def click_sign_up(self):
         self.driver.find_element(*self.SIGN_UP_BUTTON).click()
 
-    # method_verify_url("https://jules.app/sign-up")
-
     def click_login_button(self):
         self.driver.find_element(*self.LOGIN_BUTTON).click()
-
-    # method_verify_url("https://jules.app/sign-in")

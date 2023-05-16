@@ -54,10 +54,6 @@ class JulesApp2(Browser):
         EC.text_to_be_present_in_element((By.TAG_NAME, "p"), 'Please enter a valid email address.')
         error.is_displayed()
 
-        # actual = self.driver.find_element(*self.ERROR_NOTIFICATION).text
-        # expected = "Please enter a valid email address."
-        # assert expected in actual
-
     def clear_email_input(self):
         self.driver.find_element(*self.FIELD).send_keys(Keys.BACKSPACE * 12)
 
@@ -71,31 +67,3 @@ class JulesApp2(Browser):
         except Exception as e:
             # print(e)
             print("Eroarea a disparut")
-
-
-# obiect = JulesApp2()
-# obiect.navigate_to_jules_app()
-# sleep(1)
-# obiect.click_sign_up()
-# sleep(1)
-# obiect.click_on_personal()
-# sleep(1)
-# obiect.click_on_continue()
-# sleep(1)
-# obiect.input_first_name('Robert')
-# sleep(1)
-# obiect.enter_after_first_name()
-# sleep(1)
-# obiect.input_last_name('Stanescu')
-# sleep(1)
-# obiect.enter_after_last_name()
-# sleep(1)
-# obiect.enter_wrong_email('wrong_email')
-# sleep(1)
-# obiect.verify_error()
-# sleep(1)
-# obiect.clear_email_input()
-# sleep(1)
-# obiect.enter_correct_email('abc@gmail.com')
-# sleep(1)
-# obiect.verify_error_is_not_displayed_anymore()

@@ -33,11 +33,3 @@ class SigninPage(Browser):
         login_button.get_attribute("disabled")
         print(login_button.get_attribute("disabled"))
         # print(login_button.is_enabled())
-
-
-obiect = SigninPage()                      # Mi-a fost mai usor sa testez prima data pe obiect.
-obiect.navigate_to_signin_page()
-obiect.input_email("a@gmail.com")
-# obiect.leave_password_empty()
-# obiect.verify_error()
-obiect.verify_login_button_is_disabled()
