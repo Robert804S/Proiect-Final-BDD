@@ -32,4 +32,3 @@ class SigninPage(Browser):
         sleep(1)
         login_button.get_attribute("disabled")
         print(login_button.get_attribute("disabled"))
-        # print(login_button.is_enabled())
